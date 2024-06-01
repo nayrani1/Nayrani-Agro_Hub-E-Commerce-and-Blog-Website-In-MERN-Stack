@@ -1,0 +1,63 @@
+Project Name: 
+                 NAYRANI AGRO HUB
+                 http://www.nayraniagrohub.com
+
+My Website Project have following keyfeatures included
+
+Products:     
+                Store the have best organic products to buy. and maintain the better healthy life.
+             
+
+Crop Information:
+
+                Providing detailed information about various crops, including their cultivation practices, optimal growing conditions, and common pests and diseases.
+                Include planting calendars to help farmers plan their crop cycles.
+
+Livestock Farming:
+
+                Cover aspects of animal husbandry, including breeds, feeding, health care, and breeding practices.
+                Include information on sustainable and ethical livestock farming practices.                
+
+Farming Techniques:
+
+                Share modern and traditional farming techniques, emphasizing sustainable and environmentally friendly practices.
+                Include tutorials, videos, or infographics for better understanding.
+
+Technology Integration:
+
+                Discuss the use of technology in agriculture, such as precision farming, IoT devices, and drones.
+                Provide information on relevant apps and software that can assist farmers in their daily operations.
+                
+Government Policies and Subsidies:
+
+                Summarize government policies related to agriculture and any subsidies or financial support available for farmers.
+                Keep this section regularly updated as policies may change.
+
+News and Updates:
+
+                Provide regular news updates about new technologies, market trends, etc.
+
+Also included
+   
+    ) Strong Authentication System 
+    ) Crud operations
+    ) User Management
+    ) Profile Uploading
+    ) products Selling
+    ) add to cart system
+    ) Stripe Payment Method (Credit Card)
+    ) Payment Gateway Integrations
+    ) Email Verification
+    ) Password Reset
+    ) Role Based Access Control
+    ) Activity Logging
+    ) API integration with other apps/services
+    ) Analytics Dashboard
+    ) Blog Posts
+    ) Blog Posts Comments System
+    ) FAQ's
+    ) Contact Form
+    ) Event Calendar
+    ) Product Reviews & Ratings
+    ) Shipping Information
+    ) Billing Information

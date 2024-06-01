@@ -1,0 +1,497 @@
+/* Navbar */
+
+.contain{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.navbar-btn{
+  display: none;
+}
+.navbar-btn{
+  display: none;
+}
+.logo-item{
+  grid-column: 2/3;
+  width: 14%;
+}
+.logo-item img{
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(1.5px 2px 0px #17181790);
+}
+.navlinks-item{
+  grid-column: 3/4;
+  width: 50%;
+}
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links ul li a {
+  text-decoration: none;
+  color: #34495E;  
+}
+.navbar-links ul li a:hover {
+  color: #00bf63;
+}
+.active{
+color: #00bf63;
+}
+
+
+
+.search-item{
+  width: 5%;
+  display: flex;
+}
+.search-item button{
+  color: #34495E;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+}
+.search-item button:hover{
+  color: #00bf63;
+  background-color: transparent;
+}
+.search-bar-popup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+
+}
+.search-form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.searchbar-close{
+  font-size: 25px;
+}
+ .search-box{
+   width: 79%;
+   height: 40px;
+   outline: none;
+   padding: 10px;
+   font-size: 15px;
+   box-shadow: inset -2px -2px 3px #34495E;
+   color: #34495E;
+   border: #34495E;
+   border-radius: 5px 0 0 5px;
+   background: transparent;
+ }
+
+.search-button{
+  width: 19%;
+  border: #34495E;
+  border-radius: 0 5px 5px 0;
+  height: 40px;
+  background: transparent;
+  color: #000000;
+  font-size: 15px;
+  justify-content: end;
+  overflow: hidden;
+  box-shadow: inset -0 -2px 3px #34495E;
+  color: #34495E;
+  outline: none;
+}
+.search-button:hover{
+  color: #00bf63;
+}
+.icons-item{
+  width: 14%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px
+}
+
+  /**
+ * Outer button-icon styles
+ */
+
+ .button-icon {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  display: inline-block;
+  font: inherit;
+  height: 50px;
+  width: 35px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+/**
+ * Override default focus styles so we can apply our own.
+ * Never do this unless you will replace them!!
+ */
+
+.button-icon:focus {
+  outline: none;
+}
+
+.button-icon::-moz-focus-inner {
+  border: 0;
+}
+
+.icon-inner {
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 99em;
+  color: #1c2731;
+  display: flex;
+  font-weight: 600;
+  height: 2em;
+  min-width: 1.3em;
+  padding-left: 8px;
+  position: relative;
+  transition: 0.2s ease;
+  width: 100%;
+}
+
+.button-icon:focus .icon-inner {
+  border-color: #fff;
+}
+
+.button-icon:hover .icon-inner {
+  filter: brightness(1.1);
+}
+
+.button-icon:active .icon-inner {
+  filter: brightness(0.9);
+}
+
+
+.Badge {
+  align-items: center;
+  background: #e30c74;
+  border: 2px solid #fff;
+  border-radius: 99em;
+  color: #fff;
+  display: flex;
+  font-size: 0.77em;
+  font-weight: 400;
+  height: 1.44em;
+  justify-content: center;
+  line-height: 1;
+  min-width: 1.44em;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+}
+
+
+.cart-counter{
+  margin-top: -35px;
+  margin-left: 20px;
+  color: black;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 10px;
+}
+.user-item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.user-icon{
+  background-color: transparent;
+  border: none;
+  color: #34495E;
+}
+.user-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.login-text{
+  margin-top: 14px;
+}
+.user-icon:hover{
+  background-color: transparent;
+  border: none;
+  color: #00bf63;
+}
+#user-dropdown-sidebar{
+  background-color:transparent;
+  border: none;
+  outline: none;
+}
+#dropdown-menu{
+  width: 250px;
+}
+.navbar-mobile{
+  display: none;
+}
+.dropdown-toggle::after {
+  display: none !important;
+  }
+@media (max-width:800px) {
+.navbar-mobile{
+  display: block;
+}
+.navbar-container{
+  display: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navbar mobile */
+.navbar-mobile-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 100vw;
+  height: 70px;
+}
+.logo img {
+  height: 50px;
+  margin-left: 10px;
+}
+.icons-item-mobile{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cart-counter{
+  margin-top: -35px;
+  margin-left: 20px;
+  color: black;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 10px;
+}
+
+.menu-icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+  display: flex;
+  justify-self: right;
+}
+.menu-icon:hover{
+  color: #00bf63;
+}
+
+
+/* Sidebar.css */
+.sidebar {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0; /* Change left to right */
+  overflow-x: hidden;
+  transition: 0.8s;
+  background-color: #ecebeb;
+  box-shadow: -2px 0 5px black;
+  z-index: 1000; /* Set a higher z-index value */
+}
+ 
+.sidebar.open {
+  width: 300px;
+}
+
+.sidebar-header {
+  text-align: right; /* Change right to left */
+  padding: 15px;
+}
+
+.toggle-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #34495E;
+  cursor: pointer;
+}
+.toggle-btn:hover {
+  color: #00bf63;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+}
+
+.nav-links li {
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  margin-left: 20px;
+  border-bottom: 1px solid #34495E;
+  border-radius: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #34495E;
+  display: flex;
+  align-items: center;
+}
+.nav-links a:hover{
+  color: #00bf63;
+}
+
+.search-bar {
+  padding: 10px;
+}
+
+.mb-search-input{
+  width: 80%;
+  padding: 5px;
+  margin-right: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #34495E;
+  outline: none;
+  background-color: transparent;
+  border-radius: 10px;
+  padding-left: 18px;
+}
+
+.mb-search-btn{
+  background: none;
+  border: none;
+  color: #34495E;
+  cursor: pointer;
+}
+.mb-search-btn:hover{
+  color: #00bf63;
+}
+.profile-btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+.profile-btn span {
+  margin-left: 10px;
+}
+.user-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+#user-dropdown-sidebar-mobile{
+  background-color:transparent;
+  outline: none;
+  width: 250px;
+  text-align: left;
+  border:none;
+  border-bottom: 1px solid #34495E;
+  border-radius: 10px;
+}
+#d-item{
+  margin-left: 50px;
+  width: 198px;
+}
+.link-btn-login{
+  width: 250px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #34495E;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.login-text{
+  text-decoration: none;
+  color: #34495E;
+
+}
+.login-text:hover{
+  color: #00bf63;
+}
+
+/* message box */
+.message-box {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  top: -100%;
+  width: 350px; /* Initial width */
+  height: calc(100vh - 70px); /* Initial height */;
+  transition: display 0.5s ease-in-out;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 5px;
+  display: none;
+}
+
+.message-box.visible {
+  top: 70px;
+  right: 0;
+  display: block;
+}
+.message-box-content {
+  
+}
+
+
+@media only screen and (max-width: 768px) {
+  .message-box {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+}
+.msg-box-close{
+  font-size: 25px;
+  cursor: pointer; 
+  text-align: right;
+}

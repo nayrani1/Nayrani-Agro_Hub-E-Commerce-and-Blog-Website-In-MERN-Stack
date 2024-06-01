@@ -1,0 +1,174 @@
+/* Side Bar */
+.admin-sidebar{
+    background: #ffffff;
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    box-shadow: 1px 0px 5px #32404e;
+}
+.top_section{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding:0 15px;
+    line-height: normal;
+}
+.bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.sidebar-link{
+    display: flex;
+    color: #34495E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    text-decoration: none;
+    gap: 15px;
+    transition: all 0.5s;
+    font-family: serif;
+}
+.sidebar-link:hover{
+    background: linear-gradient(90deg, rgba(2,178,175,0.7914624467951243) 0%, rgba(0,191,99,0.6654120266270571) 100%);
+    color: #34495E;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.active-sidebar-link{
+    background: linear-gradient(90deg, rgba(2,178,175,0.7914624467951243) 0%, rgba(0,191,99,0.6654120266270571) 100%);
+    color: #34495E;
+    text-decoration: none;
+}
+.sidebar-icon, 
+.sidebar-link_text{
+    font-size: 15px;
+
+}
+.Admin-container{
+    display: flex;
+    width: 100%;
+}
+.Admin-main{
+    margin-left: 200px ;
+    width: calc(100vw - 200px);
+    height: 100vh;
+    font-family: serif;
+}
+.admin-user-img{
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.admin-user-img p{
+    font-size: 25px;
+    font-family: serif;
+}
+.admin-user-img img{
+    border-right: 3px solid #00BF63;
+    border-top: 3px solid #00BF63;
+}
+/* Side bar Ends */
+
+
+/* Dashboard page  starts*/
+
+.account-overview{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(90deg, rgba(2,178,175,0.7914624467951243) 0%, rgba(0,191,99,0.6654120266270571) 100%);
+    box-shadow: 0 1px 5px #32404e;
+}
+.main-admin-top-row{
+    width: calc(100vw - 220px);
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    gap: 10px;
+}
+.admin-main-bottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+/* add product page */
+.line-brake{
+    width: 100%;
+    height: 1px;
+    margin: 1px 0;
+}
+.custom-file-label {
+    background-color: #fff;
+    border-radius: 7px;
+    border: 1px solid rgb(128, 126, 126);
+}
+.form-select{
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1.5px solid #ffc107;
+}
+.grid-form-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*  orders */
+.total_orders-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.recent-order-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(2,178,175,0.7914624467951243) 0%, rgba(0,191,99,0.6654120266270571) 100%);
+}
+
+/* chart */
+.custom-select {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .custom-select option {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    font-size: inherit;
+  }
+  
+  .custom-select:focus {
+    box-shadow: none;
+  }
+  

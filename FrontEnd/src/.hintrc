@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "width: fit-content",
+          "height: fit-content",
+          "user-select",
+          "backface-visibility"
+        ]
+      }
+    ],
+    "css-prefix-order": "off"
+  }
+}

@@ -1,0 +1,136 @@
+$animation-timing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+.animation-container {
+	width: 100%;
+	height: 50vw;
+	max-height: 420px;
+	max-width: 840px;
+	margin: 40px auto;
+	position: relative;
+	animation: fadeIn 1s ease-out both;
+	&:after,
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url("https://res.cloudinary.com/djljb8aby/image/upload/v1707975246/Running_Cow_Sticker_-_Running_Cow_Animated_-_Discover_Share_GIFs_ojzgch.gif")
+		30% 0 no-repeat;
+		background-size: 18%;
+		z-index: -1;
+	}
+	&:before {
+		background-position: 80% 100%;
+	}
+	$circles: 1 10vw 10% 0% transparent #d6d3f8 bg-pulse 5s,
+		2 15vw 0% 15% #d6d3f8 transparent bg-rotation 22s,
+		3 5vw 52% 0% transparent #f6f7fe bg-pulse 3s,
+		4 4vw 48% 5% #d6d3f8 transparent bg-rotation 23s,
+		6 13vw 74% 32% #d6d3f8 transparent bg-rotation 23s,
+		5 6vw 88% 50% transparent #ccecfc bg-pulse 4s;
+	.circle {
+		border-radius: 100%;
+		position: absolute;
+		@each $index, $size, $left, $top, $border, $bg, $animation,
+			$duration in $circles
+		{
+			&:nth-child(#{$index}) {
+				border: 2px dashed $border;
+				background: $bg;
+				left: $left;
+				top: $top;
+				width: $size;
+				height: $size;
+				animation: $animation $duration $animation-timing both infinite;
+			}
+		}
+	}
+}
+@keyframes bg-pulse {
+	50% {
+		transform: scale(0.7) translatey(5%);
+	}
+}
+@keyframes bg-rotation {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes flipVertical {
+	from {
+		transform: rotateY(90deg);
+	}
+	to {
+		transform: rotateY(0deg);
+	}
+}
+@keyframes showBubble {
+	from {
+		transform: rotate(15deg) translatey(10px);
+		opacity: 0;
+	}
+}
+
+@keyframes scaleInCenter {
+	0% {
+		transform: translate(-50%, -50%) scale(0.8);
+		opacity: 0.2;
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes scaleInUp {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+
+		transform: translatey(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translatey(0);
+	}
+}
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+
+		transform: translatex(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translatex(0);
+	}
+}
+

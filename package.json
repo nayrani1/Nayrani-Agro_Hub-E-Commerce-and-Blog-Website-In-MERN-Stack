@@ -1,0 +1,45 @@
+{
+  "name": "nayrani-agro-hub",
+  "version": "1.0.0",
+  "description": "MERN-Stack Based Project Named as Nayrani Agro Hub",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon BackEnd/server",
+    "dev": "SET Node_ENV=DEVELOPMENT&nodemon BackEnd/server",
+    "prod": "SET Node_ENV=PRODUCTION&nodemon BackEnd/server",
+    "seed": "node BackEnd/utils/seeder"
+  },
+  "keywords": [
+    "JavaScript",
+    "MongoDb",
+    "DataBase",
+    "Html",
+    "Css",
+    "Bootstrap",
+    "Redux",
+    "MERN"
+  ],
+  "author": "Nayrani",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cloudinary": "^1.41.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.2",
+    "nodemailer": "^6.9.8",
+    "react-helmet": "^6.1.0",
+    "socket.io": "^4.7.5",
+    "strip": "^3.0.0",
+    "stripe": "^15.7.0",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
